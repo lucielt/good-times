@@ -1,0 +1,66 @@
+.register-image {
+    background-image: url('/Users/lucieletouze/Projets/SuperHi/good-times/public/assets/images/location.jpg');
+    background-position: center bottom;
+}
+.bg-orange {
+background-color: #ffe6dd;
+}
+input {
+    border: none;
+    line-height: 1.5;
+    font-size: 16px;
+    height: 48px;
+    width: 100%;
+    padding: 0 12px;
+    outline: none;
+    color: #32325b;
+}
+
+input::placeholder{
+    color: #aab7c4;
+}
+.register{
+    /* using grid to stack div on top of each other */
+    display: grid;
+    place-items: center;
+    /*hide overflow div on transform*/
+    overflow: hidden;
+}
+.front,
+.back {
+    grid-area: 1/1;
+}
+.front {
+    transition: transform 0.5s ease;
+}
+
+.front.slide-up{
+
+    transform: translateY(-100%);
+}
+
+/* -- BUTTONS -- */
+button {
+    cursor: pointer;
+    outline: none;
+}
+.button {
+    display: inline-block;
+    background-color: var(--orange);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: none;
+    padding: 24px 72px;
+    font-family: 'HK-Grotesk-Bold', sans-serif;
+    border-radius: 50px;
+}
+.button-small {
+    font-size: 14px;
+    padding: 12px 20px;
+}
+.button-outline {
+    background-color: transparent;
+    border: solid 2px var(--orange);
+    color: var(--orange);
+}

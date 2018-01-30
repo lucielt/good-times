@@ -1,0 +1,131 @@
+:root {
+    --orange: #ff3c15;
+}
+body {
+    font-family: 'HKGrotesk-Medium', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #414141;
+
+    background-image: url('/Users/lucieletouze/Projets/SuperHi/good-times/public/assets/images/background.jpg');
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+}
+a {
+    text-decoration: none;
+    color: #414141;
+}
+.heading {
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #fff;
+    font-size: 110px;
+    line-height: 1;
+}
+.heading-orange {
+    color: var(--orange);
+    font-size: 120px;
+    -webkit-text-stroke-color: var(--orange);
+    margin-bottom: 3rem;
+}
+
+.container {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+blockquote {
+    color: var(--orange);
+    font-size: 36px;
+}
+.cite {
+    display: inline-block;
+    color: var(--orange);
+    line-height: 1;
+    padding: 24px 18px;
+    border-radius: 100%;
+    border: solid 3px var(--orange);
+    text-transform: uppercase;
+    margin-top: 12px;
+ }
+
+.speaker-image {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.speaker-name,
+.speaker-title {
+  margin: 0;
+  line-height: 1.33;
+}
+
+.speaker-title {
+  color: #979797;
+  font-family: 'HK-Grotesk-Regular', sans-serif;
+}
+
+
+.schedule-container{
+    border: solid 3px var(--orange);
+    /*give us natural scrolling behavior on touch screens*/
+    -webkit-overflow-scrolling: touch;
+}
+
+/* we style up the scrollbar background */
+.schedule-container::-webkit-scrollbar {
+  width: 12px;
+  height: 14px;
+  background-color: transparent;
+}
+
+/* styles for the scrollbar itself */
+.schedule-container::-webkit-scrollbar-thumb {
+  background: var(--orange);
+  border: solid 2px #fff;
+}
+
+.schedule {
+    padding:  48px 24px;
+}
+.schedule-time {
+    color: var(--orange);
+    font-size: 36px;
+    font-family: 'HK-Grotesk-Bold', sans-serif;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.schedule-day{
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    transform: rotate(180deg);
+    padding: 24px;
+    color: #fff;
+    background-color: var(--orange);
+    line-height: 1;
+    text-align: center;
+}
+
+.footer{
+    background-color: #222;
+}
+.footer-link{
+    width: 131px;
+    height: 40px;
+    background-image: url('/Users/lucieletouze/Projets/SuperHi/good-times/public/assets/images/logo.svg');
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.visible{
+    opacity: 1;
+}
